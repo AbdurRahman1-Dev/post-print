@@ -11,8 +11,11 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Categories", href: "/categories" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Print Items", href: "/about" },
+    { name: "Flyers", href: "/contact" },
+    { name: "T-Shirts", href: "/contact" },
+    { name: "Services", href: "/contact" },
+    { name: "Custom Order", href: "/contact" },
   ]
 
   const SearchInput = () => (
@@ -37,7 +40,7 @@ export default function Navbar() {
   )
 
   return (
-    <nav className="w-full border-b">
+    <nav className="w-full border-b  bg-white">
 <div className="container mx-auto px-2 py-3">
         {/* First Row */}
       <div className="flex items-center justify-between  w-full mx-auto gap-5">
@@ -90,7 +93,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-base font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-base font-medium text-muted-foreground transition-colors hover:text-primary uppercase"
             >
               {item.name}
             </a>
