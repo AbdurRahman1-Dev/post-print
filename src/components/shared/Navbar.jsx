@@ -40,7 +40,7 @@ export default function Navbar() {
   )
 
   return (
-    <nav className="w-full border-b  bg-white">
+    <nav className="w-full border-b  bg-white sticky top-0 left-0 sm:static z-50">
 <div className="container mx-auto px-2 py-3">
         {/* First Row */}
       <div className="flex items-center justify-between  w-full mx-auto gap-5">
@@ -51,12 +51,21 @@ export default function Navbar() {
           <SearchInput />
         </div>
         <div className="flex items-center space-x-4 md:w-[10%] justify-end">
-           <Button size="lg"
-          //  className="hidden md:flex"
+          <a className="sm:block hidden" href="#">      <Button
+            size="lg"
+        
             >
             <User className="mr-2 h-5 w-5" />
             Login
-          </Button>
+          </Button></a>   
+              <a className=" sm:hidden" href="#">      <Button
+         
+        
+            >
+            <User className="mr-2 h-5 w-5" />
+            Login
+          </Button></a>
+     
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
