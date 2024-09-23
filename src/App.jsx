@@ -12,7 +12,7 @@ function App() {
    <main >
      <Navbar/>
      <DiscountLabel/>
-    <div className="space-y-16">
+    <div className="space-y-24">
        <HeroSection/>
      <Categories/>
      <Services/>

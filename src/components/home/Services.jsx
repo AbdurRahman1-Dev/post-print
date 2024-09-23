@@ -2,12 +2,12 @@ import {
   Card,
 
   CardDescription,
-
+CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react";
+import { Check, ChevronRight } from "lucide-react";
 
 const Services = () => {
 
@@ -22,12 +22,12 @@ const Services = () => {
    
   ]
   return (
-    <section className="container mx-auto px-2 flex justify-between gap-10 items-start flex-row-reverse relative">
-              <div className="flex flex-col justify-center space-y-4 order-2 md:order-1 w-[40%] sticky top-5 left-0">
+    <section className="container mx-auto px-4 md:flex justify-between gap-10 items-start flex-row-reverse relative space-y-5">
+              <div className="flex flex-col justify-center space-y-4 order-2 md:order-1 md:w-[40%] md:sticky top-5 left-0">
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold tracking-normal sm:text-3xl xl:text-4xl/none">
+              <h3 className="text-2xl font-bold tracking-normal sm:text-3xl xl:text-4xl/none">
          Helpful Services For You
-              </h1>
+              </h3>
               <p className="max-w-[600px] text-zinc-500 text-base dark:text-zinc-400">
                 Discover a world of possibilities. Our platform offers innovative solutions to help you achieve your goals and transform your ideas into reality.
               </p>
@@ -46,12 +46,17 @@ const Services = () => {
         
             </div>
           </div>
-      <div className="w-[60%] grid grid-cols-1 md:grid-cols-2 gap-5 ">
+      <div className="md:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-5 ">
         {services.map((item) => ( <Card key={item.name}>
 
-  <CardHeader>
-    <CardTitle className='text-3xl'>{item.name}</CardTitle>
+  <CardHeader className='flex flex-col justify-start items-start gap-2'>
+    <CardTitle className='text-2xl'>{item.name}</CardTitle>
     <CardDescription>{item.des}</CardDescription>
+
+          
+       
+  <Button variant="ghost">Explore more <ChevronRight /></Button>
+  
   </CardHeader>
 
 </Card>))}

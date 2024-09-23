@@ -28,22 +28,20 @@ export default function HeroSection() {
               </Button> */}
             </div>
           </div>
-          <div className=" p-10 order-1 md:order-2">
+          <div className=" md:p-16 order-1 md:order-2">
     
             <Carousel  className="w-full relative">
   <CarouselContent>
     <CarouselItem>        <img
               src="https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2F2f%2F0c%2F71%2F2f0c71fec63305098cf790cd8b75cbb8.jpg&w=384&q=75"
               alt="Hero Image"
-              width={500}
-              height={500}
+           
               className="aspect-square overflow-hidden rounded-xl object-cover object-center relative w-full"
             /></CarouselItem>
     <CarouselItem>        <img
               src="https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F564x%2F10%2F2e%2Fb2%2F102eb29ae655577b7bc12d5b9da29a74.jpg&w=384&q=75"
               alt="Hero Image"
-              width={500}
-              height={500}
+              
               className="aspect-square overflow-hidden rounded-xl object-cover object-center relative w-full"
             /></CarouselItem>
 
