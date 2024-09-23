@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: "Jost";
+  src:local("Jost-Regular"),
+  url('./assets/font/Jost-Regular.ttf') 
+}
+:root  {
+  --background: 291 100% 95%;
+  --foreground: 291 5% 0%;
+  --card: 291 50% 90%;
+  --card-foreground: 291 5% 10%;
+  --popover: 291 100% 95%;
+  --popover-foreground: 291 100% 0%;
+  --primary: 291 51.5% 38%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 291 30% 70%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 253 30% 85%;
+  --muted-foreground: 291 5% 35%;
+  --accent: 253 30% 80%;
+  --accent-foreground: 291 5% 10%;
+  --destructive: 0 100% 30%;
+  --destructive-foreground: 291 5% 90%;
+  --border: 291 30% 50%;
+  --input: 291 30% 18%;
+  --ring: 291 51.5% 38%;
+  --radius: 0.5rem;
+}
+.dark  {
+  --background: 291 50% 5%;
+  --foreground: 291 5% 90%;
+  --card: 291 50% 0%;
+  --card-foreground: 291 5% 90%;
+  --popover: 291 50% 5%;
+  --popover-foreground: 291 5% 90%;
+  --primary: 291 51.5% 38%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 291 30% 10%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 253 30% 15%;
+  --muted-foreground: 291 5% 60%;
+  --accent: 253 30% 15%;
+  --accent-foreground: 291 5% 90%;
+  --destructive: 0 100% 30%;
+  --destructive-foreground: 291 5% 90%;
+  --border: 291 30% 18%;
+  --input: 291 30% 18%;
+  --ring: 291 51.5% 38%;
+  --radius: 0.5rem;
+}
