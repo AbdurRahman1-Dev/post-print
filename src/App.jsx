@@ -1,6 +1,8 @@
 import Categories from "./components/home/Categories"
 import HeroSection from "./components/home/HeroSection"
-import Products from "./components/home/Products"
+import MarketingMaterials from "./components/home/MarketingMaterials"
+import PopularProducts from "./components/home/PopularProducts"
+
 import Services from "./components/home/Services"
 import DiscountLabel from "./components/shared/DiscountLabel"
 import Footer from "./components/shared/Footer"
@@ -16,7 +18,8 @@ function App() {
     <div className="space-y-24">
        <HeroSection/>
      <Categories/>
-     <Products/>
+     <PopularProducts/>
+     <MarketingMaterials/>
      <Services/>
     <Footer/>
     </div>
