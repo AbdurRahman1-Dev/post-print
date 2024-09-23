@@ -1,5 +1,6 @@
 import Categories from "./components/home/Categories"
 import HeroSection from "./components/home/HeroSection"
+import Services from "./components/home/Services"
 import DiscountLabel from "./components/shared/DiscountLabel"
 import Footer from "./components/shared/Footer"
 import Navbar from "./components/shared/Navbar"
@@ -14,6 +15,7 @@ function App() {
     <div className="space-y-16">
        <HeroSection/>
      <Categories/>
+     <Services/>
     <Footer/>
     </div>
    </main>
