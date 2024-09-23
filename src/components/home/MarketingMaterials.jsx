@@ -20,7 +20,7 @@ const products = [
 
 const MarketingMaterials = () => {
   return (
-    <section className="container mx-auto px-2 w-full">
+    <section className="container mx-auto px-4 w-full">
       <div className="px-2">
         <Title title="Marketing Materials" />
         <Carousel plugins={[

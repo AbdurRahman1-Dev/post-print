@@ -10,20 +10,20 @@ import Navbar from "./components/shared/Navbar"
 
 
 function App() {
- 
+
   return (
-   <main >
-     <Navbar/>
-     <DiscountLabel/>
-    <div className="space-y-24">
-       <HeroSection/>
-     <Categories/>
-     <PopularProducts/>
-     <MarketingMaterials/>
-     <Services/>
-    <Footer/>
-    </div>
-   </main>
+    <main >
+      <Navbar />
+      <DiscountLabel />
+      <div className="space-y-24">
+        <HeroSection />
+        <Categories />
+        <PopularProducts />
+        <MarketingMaterials />
+        <Services />
+        <Footer />
+      </div>
+    </main>
   )
 }
 

@@ -13,9 +13,9 @@ const products = [
   { id: 6, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2F87%2Fea%2F39%2F87ea397f4600215f9200dac3d825ee0f.jpg&w=384&q=75" }, { id: 7, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2F47%2Fbb%2F8b%2F47bb8b1f1b999762f7c4f00145007d01.jpg&w=384&q=75" }, { id: 8, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Fbd%2F5b%2Fae%2Fbd5baebd0169b35bb937223d9805054e.jpg&w=384&q=75" }, { id: 9, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" }, { id: 10, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" }, { id: 11, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" },
   { id: 12, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" },
 
-  // { id: 13, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" },
+  { id: 13, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" },
 
-  // { id: 14, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" }, { id: 15, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" }, { id: 16, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" },
+  { id: 14, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" }, { id: 15, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" }, { id: 16, name: "Product 6", price: "$59.99", image: "https://poshprint.co/_next/image?url=https%3A%2F%2Fi.pinimg.com%2F736x%2Ffa%2F56%2Fd4%2Ffa56d48922e72bdeb42d6985df517f1e.jpg&w=384&q=75" },
 ];
 
 const PopularProducts = () => {
@@ -23,7 +23,7 @@ const PopularProducts = () => {
     <section className="container mx-auto px-4 w-full">
       <div className="px-2">
         <Title title="Popular Products" />
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           {products.map((product, i) => (
             <Card className='shadow-sm' key={product.id} >
               <CardContent className="flex aspect-square items-center justify-center p-2">
