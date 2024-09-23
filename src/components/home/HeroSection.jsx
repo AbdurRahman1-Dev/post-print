@@ -11,8 +11,8 @@ export default function HeroSection() {
   return (
     <section className=" w-full py-6 md:py-0 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-          <div className="flex flex-col justify-center space-y-4">
+        <div className="grid gap-5 md:gap-10 grid-cols-1 md:grid-cols-2 ">
+          <div className="flex flex-col justify-center space-y-4 order-2 md:order-1">
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-normal sm:text-5xl xl:text-6xl/none  ">
              Ink it Right, Print it Bright. Your Vision, Our Precision.
@@ -28,7 +28,7 @@ export default function HeroSection() {
               </Button> */}
             </div>
           </div>
-          <div className="flex items-center justify-center p-10">
+          <div className="flex items-center justify-center p-10 order-1 md:order-2">
     
             <Carousel>
   <CarouselContent>

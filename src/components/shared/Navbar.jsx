@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* First Row */}
       <div className="flex items-center justify-between  w-full mx-auto gap-5">
         <a href="/" className="flex items-center space-x-2 md:w-[15%] w-[30%]">
-         <img alt="logo" className=" max-w-full max-h-full" src={logo}/>
+         <img alt="logo" className=" max-w-full max-h-full object-contain" src={logo}/>
         </a>
         <div className="hidden flex-1 items-center justify-center px-4 md:flex md:w-[75%] ">
           <SearchInput />
@@ -93,7 +93,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-base font-medium text-muted-foreground transition-colors hover:text-primary uppercase"
+              className={`text-base font-medium transition-colors hover:text-primary uppercase ${item?.name === 'Home' && 'text-primary' }`}
             >
               {item.name}
             </a>
