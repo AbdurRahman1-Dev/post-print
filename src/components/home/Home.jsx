@@ -2,15 +2,13 @@ import Categories from "./Categories"
 import HeroSection from "./HeroSection"
 import MarketingMaterials from "./MarketingMaterials"
 import PopularProducts from "./PopularProducts"
-
 import Services from "./Services"
 import DiscountLabel from "../shared/DiscountLabel"
-
 
 function Home() {
 
   return (
-    <main >
+    <main>
       <DiscountLabel />
       <div className="space-y-24">
         <HeroSection />

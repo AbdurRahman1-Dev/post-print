@@ -1,30 +1,19 @@
-import Categories from "./components/home/Categories"
-import HeroSection from "./components/home/HeroSection"
-import MarketingMaterials from "./components/home/MarketingMaterials"
-import PopularProducts from "./components/home/PopularProducts"
 
-import Services from "./components/home/Services"
-import DiscountLabel from "./components/shared/DiscountLabel"
-import Footer from "./components/shared/Footer"
-import Navbar from "./components/shared/Navbar"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Home from './components/home/Home';
+import Product from './components/products/Product';
 
 
-function App() {
-
+export default function App() {
   return (
-    <main >
-      <Navbar />
-      <DiscountLabel />
-      <div className="space-y-24">
-        <HeroSection />
-        <Categories />
-        <PopularProducts />
-        <MarketingMaterials />
-        <Services />
-        <Footer />
-      </div>
-    </main>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/product/:id" element={<Product />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
-
-export default App

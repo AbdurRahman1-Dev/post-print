@@ -23,7 +23,7 @@ const PopularProducts = () => {
     <section className="container mx-auto px-4 w-full">
       <div className="px-2">
         <Title title="Popular Products" />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-5">
           {products.map((product, i) => (
             <Card className='shadow-sm' key={product.id} >
               <CardContent className="flex aspect-square items-center justify-center p-2">
