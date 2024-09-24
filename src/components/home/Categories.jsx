@@ -44,7 +44,7 @@ export default function Categories() {
           <CarouselContent>
             {categories.map((category, index) => (
               <CarouselItem key={index} className="basis-2/4 md:basis-1/4 lg:basis-1/6">
-                <Card className="relative overflow-hidden w-48 h-48 rounded-full mx-auto group">
+                <Card className="relative overflow-hidden w-48 h-48 rounded-full mx-auto group ">
                   <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{

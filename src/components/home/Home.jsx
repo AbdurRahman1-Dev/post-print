@@ -4,6 +4,7 @@ import MarketingMaterials from "./MarketingMaterials"
 import PopularProducts from "./PopularProducts"
 import Services from "./Services"
 import DiscountLabel from "../shared/DiscountLabel"
+import NewsletterSection from "./NewsletterSection"
 
 function Home() {
 
@@ -15,7 +16,9 @@ function Home() {
         <Categories />
         <PopularProducts />
         <MarketingMaterials />
+
         <Services />
+        <NewsletterSection />
       </div>
     </main>
   )

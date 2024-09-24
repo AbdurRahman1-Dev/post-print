@@ -3,7 +3,7 @@ const Footer = () => {
     return (
 
 
-        <footer className="bg-neutral-50 mt-24">
+        <footer className="bg-neutral-50 ">
             <div className="container mx-auto w-full p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between gap-10">
                     <div className="mb-6 md:mb-0 w-[20%] flex flex-col gap-4 items-start">
